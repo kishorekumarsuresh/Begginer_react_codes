@@ -1,10 +1,12 @@
-import CodeforProps from './components/Proptypes';
-
+import ClassofProps from './components/ClassofProp';
+import Proptypes from './components/Proptypes';
 function App() {
   
   return (
     <div className="App">
-    <CodeforProps name="Karthi" age={23} />
+    <ClassofProps name="Kishore "   colors={["blue"]}> </ClassofProps>
+    <ClassofProps age={20} colors={["blue"]}/>
+    <ClassofProps name="Sanjai " />
     </div>
   );
 }
