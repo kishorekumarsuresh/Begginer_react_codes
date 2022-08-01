@@ -6,11 +6,12 @@ class ClassofProps extends Component {
     
 
     render (props){
-        const {name,age,colors} = this.props
+        const {name,age,colors,children} = this.props
         return (
             <div>
                 <h1>This is PropTypes created by {name} ,who is {age} years old.</h1>
                 <h2> The Favrt color is {colors} </h2>
+                <p>{children}</p>
             </div>
         )
     }
