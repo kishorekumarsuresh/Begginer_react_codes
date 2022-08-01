@@ -1,6 +1,9 @@
 import ClassofProps from './components/ClassofProp';
 import Mounting from './components/Mounting';
 import Proptypes from './components/Proptypes';
+import Updating from './components/Updating';
+import Updating1 from './components/Updating2';
+
 function App() {
   
   return (
@@ -10,8 +13,9 @@ function App() {
     <ClassofProps name="Sanjai " /> */}
 
     {/* <Mounting /> */}
-    <Mounting nxt={0}/>
-
+    {/* <Mounting nxt={0}/> */}
+    <Updating />
+    <Updating1 />
     </div>
   );
 }
