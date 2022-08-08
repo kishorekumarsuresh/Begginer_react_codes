@@ -18,14 +18,14 @@ class ClassofProps extends Component {
 }
 
 ClassofProps.propTypes ={
-    name : Proptypes.string,
+    name : Proptypes.string.isRequired,
     age : Proptypes.number,
-    colors : Proptypes.array
+    colors : Proptypes.oneOfType([Proptypes.array,Proptypes.string]).isRequired
 };
 
 ClassofProps.defaultProps ={
     name: "Unknown",
-    age: 18
+    age: 18,
 };
 
 export default ClassofProps

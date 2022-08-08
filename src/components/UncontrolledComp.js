@@ -3,13 +3,15 @@ import React,{Component} from 'react'
 class UncontrolledComp extends Component{
     constructor (props){
         super(props)
-        this.handleSubmit = this.handleSubmit.bind(this)
+        //this.handleSubmit = this.handleSubmit.bind(this)
         this.input = React.createRef()
     }
-
-    handleSubmit(e) {
+    componentDidMount(){
+        this.input.current.focus()
+    }
+    handleSubmit=(e)=> {
+        e.preventDefault()
         alert(`the name  is ${this.input.current.value}`)
-        e.preventDefault();
     }
     render(){
         return (

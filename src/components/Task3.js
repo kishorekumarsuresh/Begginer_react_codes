@@ -1,17 +1,19 @@
 import React,{Component} from "react";
 
 class Task3 extends Component {
-
-    blurChange(){
-        let x = document.getElementById("id1");
-        x.value = x.value.toUpperCase();
+    constructor(props){
+        super(props);
+        this.blurChange = this.blurChange.bind(this);
+    }
+    blurChange(event){
+        this.props.Msg(event.target.value.toUpperCase());
     }
     render (){
         return (
             <div>
-                <input id="id1" type="text" 
+                <input  type="text" 
                 value={this.props.Name}
-                onChange={this.props.Msg}
+                onChange={(e)=>this.props.Msg(e.target.value)}
                 onBlur={this.blurChange}/>
             </div>
         )

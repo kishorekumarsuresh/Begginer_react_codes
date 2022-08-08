@@ -11,16 +11,20 @@ class Task1 extends Component {
         }
     }
 
-    changeName = (e) => { this.setState({Name : e.target.value})}
+    changeName = (value) => { this.setState({Name : value})}
 
 
 
     render() {
         return (
             <div>
+                <br />
+                <Task3  Name={this.state.Name} Msg= {this.changeName} />
+
                <p> The Display name is {this.state.Name} </p>
                <Task2 Name={this.state.Name} />
-               <Task3 Msg={this.changeName} Name={this.state.Name}/>
+               <br />
+               
             </div>
         )
     }
