@@ -8,7 +8,7 @@ const ref = createRef();
 
 useEffect(() => {
 	ref.current = "GeeksforGeeeks";
-}, [counter]);
+}, []);
 
 useEffect(
 	() => {
@@ -21,7 +21,7 @@ return (
 	<div className="App">
 	<header className="App-header">
 		<h3>Example on createRef</h3>
-		<button onClick={() => setCounter(counter + 1)}>
+		<button onClick={() => setCounter((counter) => counter + 1)}>
 		Increment
 		</button>
 		<h5>Counter Value: {counter}</h5>

@@ -5,10 +5,11 @@ import PropTypes from 'prop-types'
 
 const styles = ({
     heading:{
-        color:'green'
-       // backgroundColor:'blue'
-    }
+        color:'yellow',
+         backgroundColor:'blue'
+    },
 })
+
 
 class WithStyle extends Component {
   render() {

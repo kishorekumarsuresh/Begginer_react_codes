@@ -11,7 +11,7 @@ import React, { Component } from 'react'
         
     }
     
-
+    
     handleChange = ()=> {
         alert(`the name is ${this.inputRef.current.value}`)
         
